@@ -1,0 +1,63 @@
+{{> docheader}}
+<div class="container my-5 mx-auto text-center" id="controlpanel">
+  <div class="row">
+    <div class="col-sm-10 col-lg-8 mx-auto">
+
+  <div class="user-form">
+    <div class="form-group">
+      <div class="row py-3">
+        <div class="col-6 text-center mx-auto">
+          <h2>Control Panel</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div id="error" class="col-6 mx-auto">
+        </div>
+      </div>
+      <div class="row">
+        <div id="message" class="col-6 mx-auto">
+        </div>
+      </div>
+
+      <div class="row py-3 text-center">
+        <div class="col-8 mx-auto">
+          <label for="username">Select User</label>
+          <div class="input-group form-control">
+            <select class="custom-select" id="user">
+              <option selected> - </option>
+              {{#each users}}
+              <option value="{{_id}}">{{username}}</option>
+              {{/each}}
+            </select>
+            <div class="input-group-append">
+              <button class="btn btn-outline-success" type="button" onclick=promote()>Promote</button>
+              <button class="btn btn-outline-success" type="button" onclick=demote()>Demote</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <hr>
+      <div class="row py-3">
+        <div class="col-8 mx-auto">
+          <button class="btn btn-outline-success" type="button" name="increase" onclick=raiseDif()>Increase Difficulty</button>
+          <button class="btn btn-outline-success" type="button" name="decrease" onclick=lowerDif()>Decrease Difficulty</button>
+        </div>
+      </div>
+      <div class="row py-3">
+        <div class="col-8 mx-auto">
+          <button class="btn btn-outline-success btn-block" type="button" name="reset" data-toggle="modal" data-target="#resetModal">Reset</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+{{> modals}}
+
+<script type="text/javascript" src="/account.js"></script>
+
+{{> docfooter}}

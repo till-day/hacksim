@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-9 mx-auto" id="title-bar">
+  </div>
+  <div class="col-1 ml-auto" id="window-controls">
+    <a href="#" class="btn btn-outline-success" onclick=route('location','{{location.xuid}}')>X</a>
+  </div>
+</div>
+
+<div class="window m-5">
+  <div class="row">
+    <div class="col-10 mx-auto text-align-right" id="screen"></div>
+  </div>
+  <div class="row">
+    <div class="col-1 ml-auto">
+      [{{user.displayName}}]$
+    </div>
+    <div class="col-9 mr-auto ml-1">
+      <input autofocus type="text" name="console" value="" id="console">
+    </div>
+  </div>
+</div>
+{{> scripts}}

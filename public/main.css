@@ -1,0 +1,73 @@
+body {
+  background-color: black;
+  color: limegreen;
+}
+
+hr {
+  border-color: limegreen;
+}
+
+option {
+  color: limegreen;
+}
+
+.custom-select {
+  background-color: black;
+  color: limegreen;
+  border-color: limegreen;
+}
+
+.btn-success, .btn-outline-success {
+  color: limegreen;
+}
+
+.btn-outline-success:hover {
+  background-color: limegreen;
+  color: black;
+}
+
+.user-form {
+  border-radius: 15px;
+  border-color: black;
+  border-width: 1px;
+  color: limegreen;
+}
+
+.window {
+  border-radius: 5px;
+  border-color: limegreen;
+  box-shadow: 0 0 5px limegreen;
+  height: 430px;
+}
+
+#controlpanel .form-control {
+  padding: 0;
+  height: auto !important;
+  background-color: rgba(0,0,0,0);
+  border-color: limegreen;
+}
+
+#screen {
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
+#console {
+  /* width: 100%; */
+  background-color: black;
+  color: limegreen;
+  border: none;
+  width: 100%;
+}
+
+#console:focus {
+    outline: none !important;
+    border-bottom:0px solid limegreen;
+    box-shadow: 0 0 0px #000000;
+}
+
+::-webkit-scrollbar {
+  background-color: black;
+  width: 1px;
+  visibility: hidden;
+}
